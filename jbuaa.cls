@@ -26,7 +26,7 @@ The LaTeX template for Journal of BUAA]
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{ctexart}}
 \ProcessOptions\relax
 % 引用ctexbook及基本设置
-\LoadClass[twocolumn,twoside,a4paper,UTF8]{ctexart}
+\LoadClass[twocolumn,fontset=fandol,twoside,a4paper,UTF8]{ctexart}
 
 % \documentclass[10.5pt,onecolumn,twoside,a4paper,UTF8]{ctexart} %article
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -66,19 +66,19 @@ The LaTeX template for Journal of BUAA]
 
 % \usepackage[scheme=plain]{ctex}
 \setmainfont{Times New Roman}
-\setCJKfamilyfont{hwxingkai}{STXingkai}
-\newcommand{\hwxingkai}{\CJKfamily{hwxingkai}}
-\usepackage{xeCJK}
+%\setCJKfamilyfont{hwxingkai}{STXingkai}
+%\newcommand{\hwxingkai}{\CJKfamily{hwxingkai}}
+%\usepackage{xeCJK}
 % \setCJKmainfont[BoldFont=SimHei]{SimSun}
-\setCJKfamilyfont{hei}{SimHei}
-\setCJKfamilyfont{kai}{KaiTi}
-\setCJKfamilyfont{fang}{FangSong}
+%\setCJKfamilyfont{hei}{SimHei}
+%\setCJKfamilyfont{kai}{KaiTi}
+%\setCJKfamilyfont{fang}{FangSong}
 \newcommand{\hei}{\CJKfamily{hei}}
 \newcommand{\kai}{\CJKfamily{kai}}
 \newcommand{\fang}{\CJKfamily{fang}}
   
-\newfontfamily\CalibriFont{Calibri}
-\newfontfamily\TimesNMFont{Times New Roman}
+\newfontfamily\CalibriFont{Arial}
+\newfontfamily\TimesNMFont{DejaVu Serif}
   
 \newcommand{\erhao}{\fontsize{22pt}{\baselineskip}\selectfont}      % 字号设置
 \newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}      % 字号设置
