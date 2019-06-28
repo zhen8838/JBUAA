@@ -1,10 +1,9 @@
- 
  %参考《控制理论与应用》提供的LATEX模板  http://jcta.alljournals.ac.cn/uploadfile/cta_cn/20170419/kzllyy%20template20170419-2.9.zip
  % BHOSC   BUAAthesis  https://github.com/BHOSC/BUAAthesis/
  % 北航学报 http://bhxb.buaa.edu.cn/UserFiles/File/%E5%8C%97%E8%88%AA%E5%AD%A6%E6%8A%A5%E6%A8%A1%E6%9D%BF17.1.16(1).doc
  
  %%%% 五号字对应10.5pt，不知道这样设置对否？
-\documentclass[10.5pt,twocolumn]{jbuaa}
+\documentclass[11pt,twocolumn]{jbuaa}
 
 
 %%画圆圈数字
@@ -45,13 +44,13 @@
 % 标题，基金项目，作者，通信地址定义
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{
-\vspace{1cm} \erhao\hei 北航学报\LaTeX 模板(非官方)中文题目 \sihao\fang （不超过20字）\vspace{-0.2cm}
+	\vspace{1cm} \erhao\hei 北航学报\LaTeX 模板(非官方)中文题目 \sihao\fang （不超过20字）\vspace{-0.2cm}
 }
 
 \author{
-\sihao\fang 张某某 \makebox{$^{\text{1,2}}$}，李某 \makebox{$^{\text{1,2,*}}$}，上官某某 \makebox{$^{\text{2,3}}$}，林某 \makebox{$^{\text{3}}$}，赵某 \makebox{$^{\text{3}}$}，王某 \makebox{$^{\text{3}}$}\\[0.1cm]
-\liuhao (1.~~北京航空航天大学~~航空科学与工程学院，北京~~100191；2.~~北京航空航天大学~~宇航学院，北京~~100191；\\ 
-\liuhao 3.~~西北工业大学~~自动化学院，西安~~710072) 
+	\sihao\fang 张某某 \makebox{$^{\text{1,2}}$}，李某 \makebox{$^{\text{1,2,*}}$}，上官某某 \makebox{$^{\text{2,3}}$}，林某 \makebox{$^{\text{3}}$}，赵某 \makebox{$^{\text{3}}$}，王某 \makebox{$^{\text{3}}$}\\[0.1cm]
+	\liuhao (1.~~北京航空航天大学~~航空科学与工程学院，北京~~100191；2.~~北京航空航天大学~~宇航学院，北京~~100191；\\
+	\liuhao 3.~~西北工业大学~~自动化学院，西安~~710072)
 }
 
 \date{}  % 这一行用来去掉默认的日期显示
@@ -72,25 +71,25 @@
 \PaperNo{1001-5965 （XXXX） XX-XXXX-XX}
 
 \twocolumn[
-  \begin{@twocolumnfalse}
-  \maketitle
-\positiontextbox{2.2cm}{2.9cm}{\wuhao http://bhxb.buaa.edu.cn \quad  jbuaa@buaa.edu.cn\\[0.3cm]
-\wuhao DOI: \ 10.13700/j.bh.1001-5965.****.****}
-\begin{CAbstractJBUAA}
-不少于200字，应完整概括出文章的目的、方法、结果及结论；简洁，排除常识内容，避免重复题目；独立，不得引用文中参考文献号、图号和公式号；具体，尽量用具体数字来说明该项工作取得的进展或成效，例如某项性能指标提高了百分之多少，避免``效果很好"这类的含糊其辞；便于收录，摘要、题目中避免包含公式、上下标等，以方便EI等文摘和题录数据库收录文本数据。高质量的摘要有利于文摘被国际权威数据库收录，及引起同行的重视。用第3人称，建议采用``对……进行了研究"、``报告了……现状"、``进行了……调查"等记述方法，不必使用``本文"、``作者"等作为主语。缩写词应提供中文全称。
-\end{CAbstractJBUAA}
-%%%%%%%%首页角注
-\positiontextbox{2.0cm}{25cm}{
-\noindent\rule{4cm}{.5pt}\\[0.5ex]%
-\hspace*{1em} \liuhao \linespread{0.8}\selectfont
-\parbox{\textwidth}{%
-\hei\makebox[\widthof{\makebox{*}收}][r]{收}稿日期: 2015-**-**； 录用日期： 2015-**-**； 网络出版时间：（此行信息已填） \\%
-\hei\makebox[\widthof{\makebox{*}收}][r]{网}络出版地址: （已填）\\
-\hei\makebox[\widthof{\makebox{*}收}][r]{基}金项目：国家自然科学基金（基金号~12345678）；中国博士后科学基金（基金号~87654321）（注意：国家级基金放前，地方级放后）\\
-\hei\makebox[\widthof{\makebox{*}收}][r]{\makebox{*}通}信作者：E-mail：bhxb@buaa.edu.cn\\ \\
-\hei\makebox[\widthof{\makebox{*}收}][r]{引}用格式：（可不填）
-}}
-  \end{@twocolumnfalse}
+	\begin{@twocolumnfalse}
+		\maketitle
+		\positiontextbox{2.2cm}{2.9cm}{\wuhao http://bhxb.buaa.edu.cn \quad  jbuaa@buaa.edu.cn\\[0.3cm]
+			\wuhao DOI: \ 10.13700/j.bh.1001-5965.****.****}
+		\begin{CAbstractJBUAA}
+			不少于200字，应完整概括出文章的目的、方法、结果及结论；简洁，排除常识内容，避免重复题目；独立，不得引用文中参考文献号、图号和公式号；具体，尽量用具体数字来说明该项工作取得的进展或成效，例如某项性能指标提高了百分之多少，避免``效果很好"这类的含糊其辞；便于收录，摘要、题目中避免包含公式、上下标等，以方便EI等文摘和题录数据库收录文本数据。高质量的摘要有利于文摘被国际权威数据库收录，及引起同行的重视。用第3人称，建议采用``对……进行了研究"、``报告了……现状"、``进行了……调查"等记述方法，不必使用``本文"、``作者"等作为主语。缩写词应提供中文全称。
+		\end{CAbstractJBUAA}
+		%%%%%%%%首页角注
+		\positiontextbox{2.0cm}{25cm}{
+			\noindent\rule{4cm}{.5pt}\\[0.5ex]%
+			\hspace*{1em} \liuhao \linespread{0.8}\selectfont
+			\parbox{\textwidth}{%
+				\hei\makebox[\widthof{\makebox{*}收}][r]{收}稿日期: 2015-**-**； 录用日期： 2015-**-**； 网络出版时间：（此行信息已填） \\%
+				\hei\makebox[\widthof{\makebox{*}收}][r]{网}络出版地址: （已填）\\
+				\hei\makebox[\widthof{\makebox{*}收}][r]{基}金项目：国家自然科学基金（基金号~12345678）；中国博士后科学基金（基金号~87654321）（注意：国家级基金放前，地方级放后）\\
+				\hei\makebox[\widthof{\makebox{*}收}][r]{\makebox{*}通}信作者：E-mail：bhxb@buaa.edu.cn\\ \\
+				\hei\makebox[\widthof{\makebox{*}收}][r]{引}用格式：（可不填）
+			}}
+	\end{@twocolumnfalse}
 ]
 
 
@@ -98,7 +97,7 @@
 %  正文由此开始－－－－－－－－－－－－－－－－－－－－－－－－－
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\wuhao 
+\wuhao
 %  分栏开始
 
 %%%%%！！！！！正文在第一页两栏分别合适位置插入 \enlargethispage{-3.3cm}，给首页跨双栏脚注留空间，大小需要结合前面位置和高度手动设置！！！！！
@@ -126,10 +125,12 @@
 \subsubsection{公式编排}
 \label{labSecForm}
 《北京航空航天大学学报》一般不编排单独的符号表，对于公式中的变量含义需要说明的，请在公式后的段落中，采用``式中：$A$为某某；$B$为某某；……"的方式加以说明。
+
 \begin{equation}
-\label{eqnLabelp}
-p_1 (h) = \dfrac{n_{\textnormal{He}}RT}{V}-\rho_{\textnormal{He}}gh
+	\label{eqnLabelp}
+	p_1 (h) = \dfrac{n_{\textnormal{He}}RT}{V}-\rho_{\textnormal{He}}gh
 \end{equation}
+
 式中:$n_{\textnormal{He}}$ 和 $\rho_{\textnormal{He}}$ 分别为艇囊内部氦气的物质的量和氦气在温度 $T$ 时的平均密度；
 $V$=\SI{36893.426}{\cubic\meter}%%数字会小一些，默认的是公式字体大小
 为艇囊体积；$T$=\SI{216.65}{\kelvin}为艇囊内稳态温度；$h$为距离艇囊中心轴线($x$轴)的垂直高度.请使用Mathtype编辑。公式中字体的定义尺寸为10磅，上标/下标68\%，次下标/上标42\%，符号150\%，次符号100\%(设置方法：Mathtype-尺寸-定义)。长公式如需转行，应在记号=，+，$-$等之后断开，而在下一行开头不再重复这一记号。
@@ -162,42 +163,42 @@ $V$=\SI{36893.426}{\cubic\meter}%%数字会小一些，默认的是公式字体�
 
 6）类似图片尺寸尽量相同。
 
-《北航学报》自2014年起可提供彩版印刷，如有彩印需求请作者在“出版工作单”中注明。若不需彩印，请作者作图时注意用可区分的线形或符号区分不同曲线，以保证黑白图清晰可分辨。 
+《北航学报》自2014年起可提供彩版印刷，如有彩印需求请作者在“出版工作单”中注明。若不需彩印，请作者作图时注意用可区分的线形或符号区分不同曲线，以保证黑白图清晰可分辨。
 
 图中文字均用中文或变量名称表示！
 \begin{figure}[b!]
-\centering
-\includegraphics [scale=1,trim=0 0 0 0]{./image/tu1.png}
-\bicaption[labelFigtu1]{图}{\centering 电磁力峰值随线圈-铝板蒙皮间距和铝板蒙皮厚度变化曲线}{Fig.}{\centering Curves of electromagnetic force peak changing with coil-aluminum-plate gap and thickness of aluminum plate}
+	\centering
+	\includegraphics [scale=1,trim=0 0 0 0]{./image/tu1.png}
+	\bicaption[labelFigtu1]{图}{\centering 电磁力峰值随线圈-铝板蒙皮间距和铝板蒙皮厚度变化曲线}{Fig.}{\centering Curves of electromagnetic force peak changing with coil-aluminum-plate gap and thickness of aluminum plate}
 \end{figure}
 
 图片样例见图\ref{labelFigtu1}和图\ref{labelFigtu2}（目前是位图格式，不能编辑，作者应提供可编辑的矢量图）。
 
 \begin{figure}[h!]
-\centering
-\includegraphics [scale=1,trim=0 0 0 0]{./image/tu2.png}
-\bicaption[labelFigtu2]{图}{\centering 谐振腔输入光强波动对谐振曲线的影响}{Fig.}{\centering Fluctuation influence of the resonator's input intensity on resonance curve}
+	\centering
+	\includegraphics [scale=1,trim=0 0 0 0]{./image/tu2.png}
+	\bicaption[labelFigtu2]{图}{\centering 谐振腔输入光强波动对谐振曲线的影响}{Fig.}{\centering Fluctuation influence of the resonator's input intensity on resonance curve}
 \end{figure}
 
 \subsubsection{表格}
 请使用三线表。选中表格，点右键打开``边框和底纹”，可对表格的边框等格式进行编辑，三线表的一般格式见表\ref{labelTabtab1}。
 \begin{table}[h]
-\centering
-\captionnamefont{\xiaowuhao\bf }
-\captiontitlefont{\xiaowuhao\bf }
-\bicaption[labelTabtab1]{表}{传输线积冰条件}{Table}{Icing conditions of transmission line}
-\renewcommand\tabcolsep{1em}
-% \xiaowuhao \selectfont
-% \renewcommand{\arraystretch}{0.8}
-% \fontsize{9}{11}\selectfont
-\begin{tabular}{cccc}
-\toprule
-{编号} &  {直径}/\si{\metre} & {静温}/\si{\kelvin} & {时间}/min\\
-\midrule 
-4 & 0.0349 & 268.15 & 30\\
-5 & 0.01905 & 268.15 & 30\\
-\bottomrule
-\end{tabular}
+	\centering
+	\captionnamefont{\xiaowuhao\bf }
+	\captiontitlefont{\xiaowuhao\bf }
+	\bicaption[labelTabtab1]{表}{传输线积冰条件}{Table}{Icing conditions of transmission line}
+	\renewcommand\tabcolsep{1em}
+	% \xiaowuhao \selectfont
+	% \renewcommand{\arraystretch}{0.8}
+	% \fontsize{9}{11}\selectfont
+	\begin{tabular}{cccc}
+		\toprule
+		{编号} & {直径}/\si{\metre} & {静温}/\si{\kelvin} & {时间}/min \\
+		\midrule
+		4      & 0.0349             & 268.15              & 30         \\
+		5      & 0.01905            & 268.15              & 30         \\
+		\bottomrule
+	\end{tabular}
 \end{table}
 
 \subsubsection{计算、实验}
@@ -221,42 +222,42 @@ $V$=\SI{36893.426}{\cubic\meter}%%数字会小一些，默认的是公式字体�
 具体样例详见文后参考文献部分。
 
 \begin{table}[h!]
-\centering
-\captionnamefont{\xiaowuhao\bf }
-\captiontitlefont{\xiaowuhao\bf }
-\bicaption[labelTabtab2]{表}{文献类型和标志代码}{Table}{Referrence type and identification code}
-\liuhao
-\tabulinesep=1.2mm
-\begin{tabu} to 0.95\linewidth {X[c,m] X[1,c,m]|[1pt]X[1,c,m] X[1,c,m]}
-\tabucline[1pt]{-}
-{参考文献} &  {文献类型} & {参考文献} &  {文献类型} \\
-{类型} &  {标识} & {类型} &  {标识}\\ \hline
-    专著     &  M  & 学位论文  & D     \\
-    会议录    &  C  &  报告   &   R   \\
-    期刊     &  J  & 标准    &   S   \\
-    报纸     &  N  & 专利    &   P   \\
-    汇编     &  G  & 档案    &   A   \\
-    计算机程序 & CP  &电子公告  &   EB    \\
-    数据库    & DB &美图      &  CM   \\
-    数据集    & DS &其他      &    Z  \\ \tabucline[1pt]{-}
-\end{tabu}
+	\centering
+	\captionnamefont{\xiaowuhao\bf }
+	\captiontitlefont{\xiaowuhao\bf }
+	\bicaption[labelTabtab2]{表}{文献类型和标志代码}{Table}{Referrence type and identification code}
+	\liuhao
+	\tabulinesep=1.2mm
+	\begin{tabu} to 0.95\linewidth {X[c,m] X[1,c,m]|[1pt]X[1,c,m] X[1,c,m]}
+		\tabucline[1pt]{-}
+		{参考文献} & {文献类型} & {参考文献} & {文献类型} \\
+		{类型}     & {标识}     & {类型}     & {标识}     \\ \hline
+		专著       & M          & 学位论文   & D          \\
+		会议录     & C          & 报告       & R          \\
+		期刊       & J          & 标准       & S          \\
+		报纸       & N          & 专利       & P          \\
+		汇编       & G          & 档案       & A          \\
+		计算机程序 & CP         & 电子公告   & EB         \\
+		数据库     & DB         & 美图       & CM         \\
+		数据集     & DS         & 其他       & Z          \\ \tabucline[1pt]{-}
+	\end{tabu}
 \end{table}
 
- \begin{table}[h!]
-\centering
-\captionnamefont{\xiaowuhao\bf }
-\captiontitlefont{\xiaowuhao\bf }
-\bicaption[labelTabtab3]{表}{电子文献载体和标志代码}{Table}{Electronic literature and identification code}
-%\renewcommand\tabcolsep{2pt}
-\liuhao
-\tabulinesep=1.2mm
-\begin{tabu} to 0.98\linewidth {X[c,m] X[1,c,m] X[1,c,m] X[1.35,c,m] X[1.2,c,m]}
-\tabucline[1pt]{-}
-\makecell{载体\\ 类型} &  \makecell{磁带\\ （magnetic\\ tape）} & \makecell{磁盘\\ （disk）} & \makecell{光盘\\ （CD-ROM）} & \makecell{联机网络\\ （online）}\\
-\hline
-\makecell{标志\\ 代码} & MT & DK & CD & OL\\
-\tabucline[1pt]{-}
-\end{tabu}
+\begin{table}[h!]
+	\centering
+	\captionnamefont{\xiaowuhao\bf }
+	\captiontitlefont{\xiaowuhao\bf }
+	\bicaption[labelTabtab3]{表}{电子文献载体和标志代码}{Table}{Electronic literature and identification code}
+	%\renewcommand\tabcolsep{2pt}
+	\liuhao
+	\tabulinesep=1.2mm
+	\begin{tabu} to 0.98\linewidth {X[c,m] X[1,c,m] X[1,c,m] X[1.35,c,m] X[1.2,c,m]}
+		\tabucline[1pt]{-}
+		\makecell{载体 \\ 类型} &  \makecell{磁带\\ （magnetic\\ tape）} & \makecell{磁盘\\ （disk）} & \makecell{光盘\\ （CD-ROM）} & \makecell{联机网络\\ （online）}\\
+		\hline
+		\makecell{标志 \\ 代码} & MT & DK & CD & OL\\
+		\tabucline[1pt]{-}
+	\end{tabu}
 \end{table}
 
 \section{其他有关事项说明}
@@ -311,8 +312,8 @@ $V$=\SI{36893.426}{\cubic\meter}%%数字会小一些，默认的是公式字体�
 
 \vspace{1em}
 {\hei\wuhao 致谢\quad}
-{\fang\wuhao 
-感谢某某……注意：首页注明基金项目后，文末不必再致谢。
+{\fang\wuhao
+	感谢某某……注意：首页注明基金项目后，文末不必再致谢。
 }
 
 
@@ -326,16 +327,16 @@ $V$=\SI{36893.426}{\cubic\meter}%%数字会小一些，默认的是公式字体�
 
 \let\OLDthebibliography\thebibliography
 \renewcommand\thebibliography[1]{
-  \OLDthebibliography{#1}
-  \setlength{\parskip}{0pt}
-  \setlength{\itemsep}{0pt plus 0.3ex}
+	\OLDthebibliography{#1}
+	\setlength{\parskip}{0pt}
+	\setlength{\itemsep}{0pt plus 0.3ex}
 }
 
 {
-\renewcommand{\baselinestretch}{0.9}
-\liuhao
-\bibliographystyle{unsrt}
-\bibliography{./TempExample}
+	\renewcommand{\baselinestretch}{0.9}
+	\liuhao
+	\bibliographystyle{unsrt}
+	\bibliography{./TempExample}
 }
 
 
@@ -344,16 +345,16 @@ $V$=\SI{36893.426}{\cubic\meter}%%数字会小一些，默认的是公式字体�
 % 作者简历
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {
-\xiaowuhao
-\noindent {\hei 作者简介:}
+	\xiaowuhao
+	\noindent {\hei 作者简介:}
 
-\noindent {\hei 姓名}~~~ 性别，学历，职称。主要研究方向：xxxxxxxxxx。
-\vskip 16pt
+	\noindent {\hei 姓名}~~~ 性别，学历，职称。主要研究方向：xxxxxxxxxx。
+	\vskip 16pt
 
-\noindent {\hei 张某某}~~~ 男，博士研究生。主要研究方向：xxxxxxxxxx。
-\vskip 16pt
+	\noindent {\hei 张某某}~~~ 男，博士研究生。主要研究方向：xxxxxxxxxx。
+	\vskip 16pt
 
-\noindent {\hei 李某某}~~~ 男，博士，教授，博士生导师。主要研究方向：xxxxxxxxxx。
+	\noindent {\hei 李某某}~~~ 男，博士，教授，博士生导师。主要研究方向：xxxxxxxxxx。
 }
 
 %%%%%！！！！！需要在合适位置插入\newpage，来平衡最后一页两栏！！！！！
@@ -363,9 +364,9 @@ $V$=\SI{36893.426}{\cubic\meter}%%数字会小一些，默认的是公式字体�
 % % % 附录
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vskip 20pt
- 
- \noindent {\hei 附录A:}
- 
+
+\noindent {\hei 附录A:}
+
 若确有特殊需要设附录的,附录部分置于作
 者简介后,标题为“附录A:”、“附录B:”......。公式
 用大写字母和数字顺序编号,例如“(A1)”, “(A2)”。
@@ -391,55 +392,55 @@ $V$=\SI{36893.426}{\cubic\meter}%%数字会小一些，默认的是公式字体�
 \cfoot{}
 \rfoot{}
 \renewcommand{\headrule}{%
-\hrule height0.4pt width \headwidth \vskip1.0pt%
-\hrule height0.4pt width \headwidth \vskip-2pt}
+	\hrule height0.4pt width \headwidth \vskip1.0pt%
+	\hrule height0.4pt width \headwidth \vskip-2pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %          英文摘要
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \twocolumn[
-  \begin{@twocolumnfalse}\vspace*{0.3cm}
-\begin{center}
-\parbox{\textwidth}{
-\setlength{\parindent}{1em}
-{
-\centering\sihao\textbf{Title title title title title title} \xiaowuhao\fang （不超过10个实词,不出现非公知公用的缩写词）\\
-} \vspace{-1.2mm}
-\begin{center}
-{\wuhao ZHANG Moumou\makebox{$^{\text{1,2}}$}, LI Mou\makebox{$^{\text{1,2,*}}$}, SHANGGUAN Moumou\makebox{$^{\text{2,3}}$}, LIN Mou\makebox{$^{\text{3}}$}, ZHAO Mou\makebox{$^{\text{3}}$}, WANG Mou\makebox{$^{\text{3}}$}}\\[-0.1cm]
-\liuhao{(1. School of Aeronautic Science and Engineering, Beijing University of Aeronautics and Astronautics, Beijing 100191, China;\\
-2. School of Astronautics, Beijing University of Aeronautics and Astronautics, Beijing 100191, China;\\
-3. College of Automation, Northwestern Polytechnical University, Xi’an 710072, China)}
-\end{center}
+	\begin{@twocolumnfalse}\vspace*{0.3cm}
+		\begin{center}
+			\parbox{\textwidth}{
+				\setlength{\parindent}{1em}
+				{
+					\centering\sihao\textbf{Title title title title title title} \xiaowuhao\fang （不超过10个实词,不出现非公知公用的缩写词）\\
+				} \vspace{-1.2mm}
+				\begin{center}
+					{\wuhao ZHANG Moumou\makebox{$^{\text{1,2}}$}, LI Mou\makebox{$^{\text{1,2,*}}$}, SHANGGUAN Moumou\makebox{$^{\text{2,3}}$}, LIN Mou\makebox{$^{\text{3}}$}, ZHAO Mou\makebox{$^{\text{3}}$}, WANG Mou\makebox{$^{\text{3}}$}}\\[-0.1cm]
+					\liuhao{(1. School of Aeronautic Science and Engineering, Beijing University of Aeronautics and Astronautics, Beijing 100191, China;\\
+						2. School of Astronautics, Beijing University of Aeronautics and Astronautics, Beijing 100191, China;\\
+						3. College of Automation, Northwestern Polytechnical University, Xi’an 710072, China)}
+				\end{center}
 
-\vspace{-10pt}\wuhao
-{
-\textbf{Abstract:} 
-(与中文摘要内容对应，英文摘要字数150\textasciitilde 200个单词)英文摘要应和中文摘要对应，并请导师
-或专业人士把关，保证摘要质量，高质量的摘要有利于文摘被国际权威数据库收录，及引起同行的重视。
-如果英文摘要比中文摘要更详细，应另提供一份英文摘要的中文副本，以便于本刊英文编辑检查英文。
-首次出现英文缩写时应注意写明全称。
+				\vspace{-10pt}\wuhao
+				{
+					\textbf{Abstract:}
+					(与中文摘要内容对应，英文摘要字数150\textasciitilde 200个单词)英文摘要应和中文摘要对应，并请导师
+					或专业人士把关，保证摘要质量，高质量的摘要有利于文摘被国际权威数据库收录，及引起同行的重视。
+					如果英文摘要比中文摘要更详细，应另提供一份英文摘要的中文副本，以便于本刊英文编辑检查英文。
+					首次出现英文缩写时应注意写明全称。
 
-英文摘要的撰写规范请参考本刊网站“下载园地”中的《Ei文摘要求》。
+					英文摘要的撰写规范请参考本刊网站“下载园地”中的《Ei文摘要求》。
 
-\textbf{Key words:} keyword1; keyword2; keyword3; keyword4; keyword5（与中文关键词一一对应,关键词请尽量从EI Controlled term中选择，以提高 EI检索的命中率及被引频次，网址：http://www.engineeringvillage.com/search/quick.url）。
-}
-}
-\end{center}
+					\textbf{Key words:} keyword1; keyword2; keyword3; keyword4; keyword5（与中文关键词一一对应,关键词请尽量从EI Controlled term中选择，以提高 EI检索的命中率及被引频次，网址：http://www.engineeringvillage.com/search/quick.url）。
+				}
+			}
+		\end{center}
 
-%%%%%！！！！！英文脚注！！！！！
-\positiontextbox{2.0cm}{16cm}{
-\noindent\rule{4cm}{.5pt}\\[0.5ex]%
-\hspace*{1em} \xiaowuhao \linespread{0.8}\selectfont
-\parbox{\textwidth}{%
-\CalibriFont
-\hei\makebox[\widthof{\makebox{*}\textbf{R}}][r]{\textbf{R}}\textbf{eceived:} 2017-xx-xx; \textbf{Accepted:} 2017-xx-xx; \textbf{Published online:} 2017-xx-xx xx:xx\\%
-\hei\makebox[\widthof{\makebox{*}\textbf{U}}][r]{\textbf{U}}\textbf{RL:} \\
-\hei\makebox[\widthof{\makebox{*}\textbf{F}}][r]{\textbf{F}}\textbf{oundation item:} National Natural Science Foundation of China (12345678); China Postdoctoral Science Foundation(87654321)\\ 
-\hspace*{2em}（注:基金项目英文名称查询“基金项目的中英文名称”） \\
-\hei\makebox[\widthof{\makebox{*}\textbf{C}}][r]{\makebox{*}\textbf{C}}\textbf{orresponding author.} Tel.: 010-8231xxxx ~~ E-mail: bhxb@buaa.edu.cn
-}}
-  \end{@twocolumnfalse}
+		%%%%%！！！！！英文脚注！！！！！
+		\positiontextbox{2.0cm}{16cm}{
+			\noindent\rule{4cm}{.5pt}\\[0.5ex]%
+			\hspace*{1em} \xiaowuhao \linespread{0.8}\selectfont
+			\parbox{\textwidth}{%
+				\CalibriFont
+				\hei\makebox[\widthof{\makebox{*}\textbf{R}}][r]{\textbf{R}}\textbf{eceived:} 2017-xx-xx; \textbf{Accepted:} 2017-xx-xx; \textbf{Published online:} 2017-xx-xx xx:xx\\%
+				\hei\makebox[\widthof{\makebox{*}\textbf{U}}][r]{\textbf{U}}\textbf{RL:} \\
+				\hei\makebox[\widthof{\makebox{*}\textbf{F}}][r]{\textbf{F}}\textbf{oundation item:} National Natural Science Foundation of China (12345678); China Postdoctoral Science Foundation(87654321)\\
+				\hspace*{2em}（注:基金项目英文名称查询“基金项目的中英文名称”） \\
+				\hei\makebox[\widthof{\makebox{*}\textbf{C}}][r]{\makebox{*}\textbf{C}}\textbf{orresponding author.} Tel.: 010-8231xxxx ~~ E-mail: bhxb@buaa.edu.cn
+			}}
+	\end{@twocolumnfalse}
 ]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
